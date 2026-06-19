@@ -1,8 +1,8 @@
-# TÀI LIỆU KIẾN TRÚC VÀ LUỒNG HỆ THỐNG BACKEND (UMC CARE)
+# TÀI LIỆU KIẾN TRÚC VÀ LUỒNG HỆ THỐNG BACKEND (Hoàn Mỹ Hospital)
 
 ## I. TỔNG QUAN KIẾN TRÚC
 
-Dự án UMC Care (Hoàn Mỹ Care) sử dụng kiến trúc MVC (Model-View-Controller) trên nền tảng Golang, tương tác với MySQL thông qua GORM và định tuyến bằng thư viện `net/http` thuần. Hệ thống được bảo mật bằng JWT Token Versioning và phân quyền RBAC đa cấp độ (Admin, Staff, Doctor, LabTech, User).
+Dự án Hoàn Mỹ Hospital sử dụng kiến trúc MVC (Model-View-Controller) trên nền tảng Golang, tương tác với MySQL thông qua GORM và định tuyến bằng thư viện `net/http` thuần. Hệ thống được bảo mật bằng JWT Token Versioning và phân quyền RBAC đa cấp độ (Admin, Staff, Doctor, LabTech, User).
 
 ---
 
@@ -19,7 +19,7 @@ flowchart LR
     Admin((Admin / Staff))
 
     %% Định nghĩa Use Cases
-    subgraph Hệ Thống UMC Care
+    subgraph Hệ Thống Hoàn Mỹ Hospital
         UC1(Đăng ký / Đăng nhập & Xác thực)
         UC2(Quản lý Hồ sơ bệnh án)
         UC3(Đặt / Hủy lịch khám)
